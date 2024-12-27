@@ -1,0 +1,59 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+    width: 100%; /* Occupy full width */
+}
+
+.input {
+    flex: 1; /* Allow the input to grow and take up available space */
+    display: flex;
+    padding: 10px 16px;
+    border-radius: 100000000px;
+    background: #FFF;
+    border: 1px solid #ccc; /* Optional: Add a border for better appearance */
+}
+
+.button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px;
+
+    background: var(--Blueish-White, #F1F4FF);
+    border: 2px solid var(--Dark-Blue, #313E78);
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.button:hover {
+    color: white;
+}
+  
+.button p {
+font-family: "Istok Web", sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 100% */
+letter-spacing: -0.24px;
+
+color: var(--Dark-Blue, #313E78);
+margin: 0;
+transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+  
+.button:hover {
+background: #101b4a; /* Cor ao passar o mouse */
+box-shadow: 0 0 25px #0b6586; /* Efeito do hover */
+}
+  
+.button:hover p {
+color: #ffffff; /* Cor do texto no hover */
+}

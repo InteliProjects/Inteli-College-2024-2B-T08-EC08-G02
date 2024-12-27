@@ -1,0 +1,143 @@
+.patient-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: #f8f9fc;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: "Istok Web", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .modal-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h1 {
+    font-size: 24px;
+    color: #0a3975;
+  }
+  
+  .modal-header p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 4px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .patient-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .patient-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 20px;
+  }
+  
+  .avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .patient-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .patient-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0a3975;
+  }
+  
+  .patient-id {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c757d;
+    margin-top: 5px;
+  }
+  
+  
+  .personal-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0a3975;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 768px) {
+    .patient-modal {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

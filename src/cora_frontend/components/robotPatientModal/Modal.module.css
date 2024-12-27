@@ -1,0 +1,125 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use vw for consistent viewport coverage */
+  height: 100vh; /* Use vh for consistent viewport coverage */
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the modal stays above other elements */
+  overflow: hidden; /* Prevent scroll glitches caused by the page content */
+}
+
+.modalContent {
+  background: #f1f4ff;
+  border-radius: 20px; /* Reduced radius for smoother appearance */
+  padding: 32px; /* Reduced padding for better scaling */
+  width: 90%; /* Make it more responsive */
+  max-width: 600px; /* Limit the maximum size */
+  max-height: 80%; /* Ensure modal doesn’t overflow the viewport */
+  overflow-y: auto; /* Add vertical scroll for content overflow */
+  border: 2px solid #243067;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative; /* Ensure the content stays within the modal */
+}
+
+.closeButton {
+  position: absolute; /* Place button at the top right corner */
+  top: 16px;
+  right: 16px;
+  color: black;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.modalHeader h1 {
+  color: #243067;
+  font-size: 24px; /* Reduced size for better scaling */
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modalHeader p {
+  color: #243067;
+  font-size: 16px; /* Reduced size for better readability */
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #243067;
+}
+
+.timeSlots {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Reduced gap for compact layout */
+}
+
+.timeSlot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #313e78;
+  padding: 8px 16px; /* Reduced padding for compact appearance */
+  border-radius: 8px;
+}
+
+.timeSlot .time {
+  color: #f1f4ff;
+  font-size: 16px; /* Reduced size for better scaling */
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+}
+
+.dropDown {
+  background: white;
+  border-radius: 6px;
+  padding: 8px 16px; /* Reduced padding */
+  border: 1px solid #7d7d7d;
+  font-size: 14px; /* Reduced size for compactness */
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #7d7d7d;
+  width: 60%; /* Ensure dropdowns don’t overflow */
+}
+
+.dateSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* Spacing between elements */
+  margin-top: 16px; /* Space below the header */
+}
+
+.arrowButton {
+  background: #313e78;
+  color: #f1f4ff;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.arrowButton:hover {
+  background: #243067; /* Darker background on hover */
+}
+
+.dateDisplay {
+  color: #243067;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}

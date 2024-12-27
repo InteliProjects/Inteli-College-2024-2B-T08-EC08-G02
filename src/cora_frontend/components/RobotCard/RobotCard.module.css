@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+  border: 2px solid rgba(49, 62, 120, 0.3);
+  border-radius: 8px;
+  background: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #00d700; /* Green color for "Em operação" */
+  margin-right: 16px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 16px; /* Space between details */
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px; /* Space between label and value */
+}
+
+.textBold {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #243067;
+}
+
+.textNormal {
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.button {
+  padding: 8px 16px;
+  background: #0a3975;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background: #082b58;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonText {
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}

@@ -1,0 +1,8 @@
+.patients {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px 64px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}

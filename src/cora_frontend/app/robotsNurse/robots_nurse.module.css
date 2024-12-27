@@ -1,0 +1,213 @@
+/* Screen container */
+.screen {
+  min-height: 100vh;
+  background: var(--Blueish-White, #F1F4FF);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 42px 64px;
+  background: #0A3975;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 40px;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 60px;
+  word-wrap: break-word;
+}
+
+.headerSearchContainer {
+  flex: 1;
+  height: 52px;
+  padding: 10px 16px;
+  background: white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.innerIcon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #313E78;
+}
+
+.headerButton {
+  padding: 16px 32px;
+  background: #F1F4FF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerButtonText {
+  color: #313E78;
+  font-size: 24px;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+  
+  /* Título da seção */
+  .titleSection {
+    width: 100%;
+    padding: 0 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .title {
+    color: #243067;
+    font-size: 36px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    line-height: 54px;
+    word-wrap: break-word;
+  }
+  
+  /* Container dos RobotCards - em coluna */
+  .robotsContainer {
+    width: 100%;
+    padding: 0 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+/* Header Title */
+.headerTitle {
+  color: white;
+  font-size: 36px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+}
+
+/* Header Actions */
+.headerActions {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Search Container */
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 8px 12px;
+  padding-right: 40px; /* Space for the search icon */
+  background: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Istok Web", sans-serif;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBar:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+/* Patients Button */
+.patientsButton {
+  padding: 8px 16px;
+  background: #f1f4ff;
+  color: #0a3975;
+  border: 2px solid #313E78;
+  border-radius: 8px;
+  font-family: "Istok Web", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 100% */
+letter-spacing: -0.24px;
+
+color: var(--Dark-Blue, #313E78);
+margin: 0;
+}
+
+.patientsButton:hover {
+  background: #0a3975;
+  color: #f1f4ff;
+}
+
+/* Section Title */
+.titleSection {
+  margin: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #243067;
+  font-size: 28px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+}
+
+/* Robots Container */
+.robotsContainer {
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  background-image: url('/Lines.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 32px;
+}

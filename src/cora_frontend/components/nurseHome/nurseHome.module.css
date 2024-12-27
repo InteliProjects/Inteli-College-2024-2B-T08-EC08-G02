@@ -1,0 +1,28 @@
+.screen {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFF;
+}
+
+.content {
+    min-height: 100vh;
+
+    display: flex;
+    padding: 64px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+
+    background-image: url('/Lines.svg');
+    background-repeat: no-repeat;
+    background-size: 160vw;
+    background-position: -24px center;
+    background-color: #FFF; 
+}

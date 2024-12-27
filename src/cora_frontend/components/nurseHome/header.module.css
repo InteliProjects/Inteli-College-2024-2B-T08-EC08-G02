@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed for smaller screens */
+    padding: 42px 64px;
+    align-items: center; /* Align items vertically */
+    gap: 128px; /* Adjust gap between title and search bar */
+    background: #0A3975;
+    width: 100%;
+}
+
+.title {
+    color: var(--White, #FFF);
+    font-family: "Istok Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: capitalize;
+    white-space: nowrap; /* Prevent wrapping for the title */
+}
+
+.searchContainer {
+    flex: 1; /* Allow the search bar to take up the remaining horizontal space */
+    display: flex;
+    justify-content: flex-end; /* Align the search bar to the right */
+}

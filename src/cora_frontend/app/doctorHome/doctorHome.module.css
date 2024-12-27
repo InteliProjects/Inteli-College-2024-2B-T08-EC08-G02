@@ -1,0 +1,136 @@
+.screen{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--Blueish-White, #F1F4FF);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    ;
+
+    padding: 42px 64px;
+    align-items: center;
+    gap: 128px;
+    align-self: stretch;
+
+    background: #0A3975;
+}
+
+.title{
+    height: fit-content;
+    color: var(--White, #FFF);
+    font-family: "Istok Web", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    text-transform: capitalize;
+}
+
+.input {
+    height: fit-content;
+    display: flex;
+    padding: 10px 16px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+
+    border-radius: 100000000px;
+    background: #FFF;
+}
+.content{
+    min-height: 100vh;
+    height: fit-content;
+
+    display: flex;
+    padding: 64px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+
+    background-image: url('/Lines.svg');
+    background-repeat: no-repeat;
+    background-size: 160vw;
+    background-position: -24px center;
+}
+
+.patientSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.patients{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px 64px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.subTitle{
+    color: var(--Dark-Text, #243067);
+    font-family: "Istok Web", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 54px */
+    letter-spacing: -0.36px;
+}
+
+.button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px;
+
+    background: var(--Blueish-White, #F1F4FF);
+    border: 2px solid var(--Dark-Blue, #313E78);
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.button:hover {
+    color: white;
+}
+  
+.button p {
+font-family: "Istok Web", sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 100% */
+letter-spacing: -0.24px;
+
+color: var(--Dark-Blue, #313E78);
+margin: 0;
+transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+  
+.button:hover {
+background: #101b4a; /* Cor ao passar o mouse */
+box-shadow: 0 0 25px #0b6586; /* Efeito do hover */
+}
+  
+.button:hover p {
+color: #ffffff; /* Cor do texto no hover */
+}

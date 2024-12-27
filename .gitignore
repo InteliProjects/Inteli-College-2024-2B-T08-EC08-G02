@@ -1,0 +1,7 @@
+build
+venv
+install
+log
+.env
+.config
+

@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: cora # Nome do banco de dados
+    ports:
+      - "27017:27017" # Mapeia a porta 27017 para o host
+    volumes:
+      - mongo_data:/data/db # Persiste os dados do MongoDB
+
+  backend:
+    build: 
+      context: ./src/backend
+    container_name: backend
+    ports:
+      - "8000:8000" # Mapeia a porta 3000 para o host
+    depends_on:
+      - mongodb
+
+volumes:
+  mongo_data:
+    driver: local

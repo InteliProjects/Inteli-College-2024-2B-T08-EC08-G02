@@ -1,0 +1,76 @@
+.patientSection {
+    min-height: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.subTitle {
+    color: var(--Dark-Text, #243067);
+    font-family: "Istok Web", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 54px */
+    letter-spacing: -0.36px;
+    flex: 1 0 0;
+}
+
+.TitleAndButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.DarkButton {
+    display: flex;
+    width: 250px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px;
+    background: var(--Dark-Blue, #313E78);
+}
+
+.modalButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .modalButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+.DarkButtonText {
+    color: var(--Blueish-White, #F1F4FF);
+    font-feature-settings: 'calt' off;
+    font-family: "Istok Web", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    letter-spacing: -0.24px;
+}
+
+.DarkButton:hover {
+    box-shadow: 0 0 25px #0b6586;
+    background: var(--Blueish-White, #F1F4FF);
+}
+
+.DarkButton:hover p {
+    color: var(--Dark-Blue, #313E78);
+}
